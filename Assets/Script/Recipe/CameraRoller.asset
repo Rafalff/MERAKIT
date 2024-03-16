@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
+  m_Name: CameraRoller
+  m_EditorClassIdentifier: 
+  dataIngredient1: {fileID: 11400000, guid: 52b503b0665ab33408d8e053b1b656bc, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: fa3d6bf255a88f6449b917349aea731c, type: 2}
+  outcomePrefab: {fileID: 8830704604582821145, guid: 2f2445553856dcb4daef7733a6ae679b, type: 3}
