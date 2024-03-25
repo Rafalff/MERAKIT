@@ -15,6 +15,7 @@ public class MoveObject : MonoBehaviour {
     private Color hoverColor = new Color(0.7971698f, 1, 0.99776f, 1f);
 
     // Define the boundaries for the object's movement
+    public float minX;
     public float maxX;
     public float maxY;
 
@@ -39,6 +40,7 @@ public class MoveObject : MonoBehaviour {
     }
 
     void OnMouseDown() {
+        combineSystem.lastInteractedGameObject = this.gameObject;
         isDragging = true;
         offset = gameObject.transform.position - GetMouseWorldPos();
         myCollider.isTrigger = true;
@@ -48,7 +50,7 @@ public class MoveObject : MonoBehaviour {
         if (isDragging) {
             Vector3 mousePos = GetMouseWorldPos() + offset;
             // Limit the position within the boundaries
-            mousePos.x = Mathf.Clamp(mousePos.x, -maxX, maxX);
+            mousePos.x = Mathf.Clamp(mousePos.x, minX, maxX);
             mousePos.y = Mathf.Clamp(mousePos.y, -maxY, maxY);
             transform.position = new Vector3(mousePos.x, mousePos.y, transform.position.z);
             rb.velocity = Vector2.zero;
@@ -56,7 +58,6 @@ public class MoveObject : MonoBehaviour {
     }
 
     void OnMouseUp() {
-        combineSystem.lastInteractedGameObject = this.gameObject;
         isDragging = false;
         myCollider.isTrigger = false;
     }
@@ -65,5 +66,13 @@ public class MoveObject : MonoBehaviour {
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         return Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    void OnMouseOver() {
+        if (Input.GetMouseButtonDown(1)) {
+            // Right mouse button clicked over the object
+            // Add your action here
+            Debug.Log("Right-clicked on the object.");
+        }
     }
 }

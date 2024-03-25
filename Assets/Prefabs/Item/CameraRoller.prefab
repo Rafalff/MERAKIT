@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combineSystem: {fileID: 0}
   isDragging: 0
+  minX: -8
   maxX: 5
   maxY: 3
 --- !u!60 &1652414002787673897
@@ -224,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combineSystem: {fileID: 0}
+  ColisionEffect: {fileID: 5343534148659126948, guid: 2068925a3f2fa3b4b9ed127873171067, type: 3}
 --- !u!114 &4618260538110075305
 MonoBehaviour:
   m_ObjectHideFlags: 0

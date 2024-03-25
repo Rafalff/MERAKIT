@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CombineTrigger : MonoBehaviour {
     public CombineSystem combineSystem;
-
+    public ParticleSystem ColisionEffect;
     private void Awake() {
         combineSystem = GameObject.Find("CombineSystem").GetComponent<CombineSystem>();
     }
@@ -14,13 +14,20 @@ public class CombineTrigger : MonoBehaviour {
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (combineSystem.lastInteractedGameObject == this.gameObject) {
+            Instantiate(ColisionEffect, collision.gameObject.transform.position, Quaternion.identity);
+        }
+    }
+
+
     private void Combine(ItemPickup ingredient1, ItemPickup ingredient2) {
         if (ingredient1 != null) {
             GameObject outcomePrefab = combineSystem.Combine(ingredient1.itemData, ingredient2.itemData);
             if (outcomePrefab != null) {
                 // Instantiate the outcomePrefab
                 GameObject instantiatedPrefab = Instantiate(outcomePrefab, CalculateMiddlePoint(ingredient1.gameObject, ingredient2.gameObject), Quaternion.identity);
-
+                Instantiate(ColisionEffect, instantiatedPrefab.transform.position, Quaternion.identity);
                 // Add debug log to check if the outcomePrefab has a Rigidbody2D component
                 if (instantiatedPrefab.GetComponent<Rigidbody2D>() == null) {
                     Debug.Log("Rigidbody2D component not found on the instantiated prefab.");
