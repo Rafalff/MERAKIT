@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
+  m_Name: Magnet
+  m_EditorClassIdentifier: 
+  dataIngredient1: {fileID: 11400000, guid: af658ecd4b3af0740a0d092f85610851, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: 583a9f67f3974a947a7c603eaa5aa339, type: 2}
+  outcomePrefab: {fileID: 7248680393318180877, guid: e64ad849b6b99174e82b05d4f2308ffc, type: 3}

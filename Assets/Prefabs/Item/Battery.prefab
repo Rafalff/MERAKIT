@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3273928618910260730}
   - component: {fileID: 667331691213497899}
   - component: {fileID: 7293973601649555784}
+  - component: {fileID: 983478002983566887}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Untagged
@@ -211,3 +212,18 @@ MonoBehaviour:
   offset: {x: -0.11, y: -0.06, z: 0}
   color: {r: 0, g: 0, b: 0, a: 0.5058824}
   material: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+--- !u!114 &983478002983566887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2343819560401077375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2202eaf9440717c4ebf2ff4518223f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wiggleAmount: 1
+  wiggleDuration: 1
+  easeType: 4

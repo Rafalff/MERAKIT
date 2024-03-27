@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
+  m_Name: SensorAir
+  m_EditorClassIdentifier: 
+  dataIngredient1: {fileID: 11400000, guid: 49645a8d3749f6b44aa89480c41baae5, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: 575735307ee3418439fd01f4c5e8d64b, type: 2}
+  outcomePrefab: {fileID: 1166868542176838910, guid: af756e5e98d4ca34a8d5fa10db461a06, type: 3}

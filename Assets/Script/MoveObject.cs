@@ -19,13 +19,25 @@ public class MoveObject : MonoBehaviour {
     public float maxX;
     public float maxY;
 
+    private GameObject parent;
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
         myCollider = rb.GetComponent<Collider2D>();
         spriteRenderer = rb.GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         combineSystem = GameObject.Find("CombineSystem").GetComponent<CombineSystem>();
+
+
+        if (transform.parent != null) {
+            parent = transform.parent.gameObject;
+        }
     }
+
+    private void Update() {
+
+    }
+
 
     // Called when the mouse enters the collider of the object
     private void OnMouseEnter() {
@@ -44,6 +56,12 @@ public class MoveObject : MonoBehaviour {
         isDragging = true;
         offset = gameObject.transform.position - GetMouseWorldPos();
         myCollider.isTrigger = true;
+
+        if (transform.parent != null) {
+            transform.SetParent(null);
+        }
+
+        transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
     }
 
     void OnMouseDrag() {
@@ -54,12 +72,20 @@ public class MoveObject : MonoBehaviour {
             mousePos.y = Mathf.Clamp(mousePos.y, -maxY, maxY);
             transform.position = new Vector3(mousePos.x, mousePos.y, transform.position.z);
             rb.velocity = Vector2.zero;
+
         }
     }
 
     void OnMouseUp() {
         isDragging = false;
         myCollider.isTrigger = false;
+
+        if (parent != null) {
+            parent.transform.position = transform.position;
+            transform.SetParent(parent.transform);
+        }
+
+        transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f);
     }
 
     private Vector3 GetMouseWorldPos() {
