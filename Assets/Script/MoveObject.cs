@@ -7,6 +7,8 @@ public class MoveObject : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
     private Collider2D myCollider;
+    private ItemPickup item;
+
     public bool isDragging = false;
 
     private Vector3 offset;
@@ -27,6 +29,7 @@ public class MoveObject : MonoBehaviour {
         spriteRenderer = rb.GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         combineSystem = GameObject.Find("CombineSystem").GetComponent<CombineSystem>();
+        item  = GetComponent<ItemPickup>();
 
 
         if (transform.parent != null) {
@@ -43,12 +46,14 @@ public class MoveObject : MonoBehaviour {
     private void OnMouseEnter() {
         // Change the color to the hoverColor when the mouse enters
         spriteRenderer.color = hoverColor;
+        TooltipsManager.instance.ShowTooltips(item.itemData.ingredientName);
     }
 
     // Called when the mouse exits the collider of the object
     private void OnMouseExit() {
         // Revert the color back to the original color when the mouse exits
         spriteRenderer.color = originalColor;
+        TooltipsManager.instance.HideTooltips();
     }
 
     void OnMouseDown() {

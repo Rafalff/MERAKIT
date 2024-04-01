@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1656061125082493824}
   - component: {fileID: 4618260538110075305}
   - component: {fileID: 1158009733279119607}
+  - component: {fileID: 6820592540811293300}
   m_Layer: 0
   m_Name: CameraRoller
   m_TagString: Untagged
@@ -254,6 +255,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2202eaf9440717c4ebf2ff4518223f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wiggleAmount: 1
+  wiggleAmount: 3
   wiggleDuration: 1
   easeType: 4
+--- !u!114 &6820592540811293300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8830704604582821145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9368cbba616bd1a428a495bd0748fea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: e6d5baccbfba28840a46c2f9f6c1cece, type: 2}

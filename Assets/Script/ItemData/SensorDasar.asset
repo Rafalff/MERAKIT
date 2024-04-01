@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e1cecfda2f80043ab2eeef3d7724e3, type: 3}
   m_Name: SensorDasar
   m_EditorClassIdentifier: 
-  ingredientName: SensorDasar
-  icon: {fileID: -55918776, guid: 14d41e7e8926dc84f8166a828cf9667d, type: 3}
+  ingredientName: Sensor Dasar
+  icon: {fileID: 21300000, guid: acd75d0ae5c8f714590fa2deee6002ae, type: 3}

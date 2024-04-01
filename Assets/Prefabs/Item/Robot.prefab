@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2202eaf9440717c4ebf2ff4518223f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wiggleAmount: 1
+  wiggleAmount: 3
   wiggleDuration: 1
   easeType: 4
 --- !u!1 &8997805928499127438
@@ -132,13 +132,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8997805928499127438}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.72537434, w: 0.6883546}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7199457, w: 0.6940304}
+  m_LocalPosition: {x: -0.438, y: 0.72, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3260822736075306923}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 93}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 92.1}
 --- !u!212 &5475154761689385370
 SpriteRenderer:
   m_ObjectHideFlags: 0

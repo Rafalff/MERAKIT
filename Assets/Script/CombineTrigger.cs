@@ -25,10 +25,18 @@ public class CombineTrigger : MonoBehaviour {
         if (ingredient1 != null) {
             GameObject outcomePrefab = combineSystem.Combine(ingredient1.itemData, ingredient2.itemData);
             if (outcomePrefab != null) {
+
+
                 // Instantiate the outcomePrefab
                 GameObject instantiatedPrefab = Instantiate(outcomePrefab, CalculateMiddlePoint(ingredient1.gameObject, ingredient2.gameObject), Quaternion.identity);
                 //Instantiate(ColisionEffect, instantiatedPrefab.transform.position, Quaternion.identity);
                 // Add debug log to check if the outcomePrefab has a Rigidbody2D component
+
+                ItemPickup itemPickup = instantiatedPrefab.GetComponent<ItemPickup>() ?? instantiatedPrefab.GetComponentInChildren<ItemPickup>();
+
+                NewItemManager.Instance.AwardAchievementForNewItem(itemPickup.itemData.ingredientName,itemPickup.itemData.icon);
+
+
                 if (instantiatedPrefab.GetComponent<Rigidbody2D>() == null) {
                     Debug.Log("Rigidbody2D component not found on the instantiated prefab.");
                 }

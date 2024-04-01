@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59e1cecfda2f80043ab2eeef3d7724e3, type: 3}
-  m_Name: Besi
+  m_Name: CameraRoler
   m_EditorClassIdentifier: 
-  ingredientName: 
-  icon: {fileID: 0}
+  ingredientName: Camera Berjalan
+  icon: {fileID: -707514846, guid: 14d41e7e8926dc84f8166a828cf9667d, type: 3}

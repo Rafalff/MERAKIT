@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Robot
   m_EditorClassIdentifier: 
   ingredientName: Robot
-  icon: {fileID: -55918776, guid: 14d41e7e8926dc84f8166a828cf9667d, type: 3}
+  icon: {fileID: 21300000, guid: bb92e8ea1f074284ca6e43d5766576d1, type: 3}

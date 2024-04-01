@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Battery
   m_EditorClassIdentifier: 
   ingredientName: Battery
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 132b9d941af25f04397c407ec22a162e, type: 3}

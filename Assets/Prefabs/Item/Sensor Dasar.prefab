@@ -309,6 +309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2202eaf9440717c4ebf2ff4518223f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wiggleAmount: 1
+  wiggleAmount: 3
   wiggleDuration: 1
   easeType: 4

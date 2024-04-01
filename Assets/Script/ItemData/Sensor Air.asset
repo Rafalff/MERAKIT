@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Sensor Air
   m_EditorClassIdentifier: 
   ingredientName: Sensor Air
-  icon: {fileID: -55918776, guid: 14d41e7e8926dc84f8166a828cf9667d, type: 3}
+  icon: {fileID: 21300000, guid: 6fa1f045baed41443b1fe223123a760a, type: 3}

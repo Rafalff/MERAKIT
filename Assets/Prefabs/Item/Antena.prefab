@@ -311,4 +311,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wiggleAmount: 1
   wiggleDuration: 1
-  easeType: 4
+  easeType: 16

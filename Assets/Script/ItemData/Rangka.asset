@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Rangka
   m_EditorClassIdentifier: 
   ingredientName: Rangka
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e310e2b2c8c099c48a0a837c36724fad, type: 3}

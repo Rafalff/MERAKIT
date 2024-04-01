@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e1cecfda2f80043ab2eeef3d7724e3, type: 3}
   m_Name: RobotPembersih
   m_EditorClassIdentifier: 
-  ingredientName: RobotPembersih
-  icon: {fileID: -55918776, guid: 14d41e7e8926dc84f8166a828cf9667d, type: 3}
+  ingredientName: Robot Pembersih
+  icon: {fileID: 21300000, guid: 5474796f72379fa4292e77eb1369c669, type: 3}
