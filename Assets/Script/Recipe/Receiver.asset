@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
-  m_Name: Magnet
+  m_Name: Receiver
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 11400000, guid: af658ecd4b3af0740a0d092f85610851, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: 2a200a08ebcf36d4a86dc956489102b9, type: 2}
-  outcomePrefab: {fileID: 7248680393318180877, guid: e64ad849b6b99174e82b05d4f2308ffc, type: 3}
+  dataIngredient1: {fileID: 11400000, guid: 2ebc0a09f976aec418ac779ea72f6570, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: 1f0b8bbff59bcb54cac90f60a75d9727, type: 2}
+  outcomePrefab: {fileID: 839387727378375341, guid: 87bc0bb829c3d4a43b3b3694925290fb, type: 3}

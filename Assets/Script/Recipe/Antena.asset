@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
   m_Name: Antena
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 0}
-  dataIngredient2: {fileID: 0}
-  outcomePrefab: {fileID: 0}
+  dataIngredient1: {fileID: 11400000, guid: 6fc1b0cf5d1f5634fb354c67215c0c89, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: 2a200a08ebcf36d4a86dc956489102b9, type: 2}
+  outcomePrefab: {fileID: 3925658205596700604, guid: dddc81253e6b28647af2dc7a155965bf, type: 3}

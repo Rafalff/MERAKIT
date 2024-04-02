@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
-  m_Name: Magnet
+  m_Name: Speaker
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 11400000, guid: af658ecd4b3af0740a0d092f85610851, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: 2a200a08ebcf36d4a86dc956489102b9, type: 2}
-  outcomePrefab: {fileID: 7248680393318180877, guid: e64ad849b6b99174e82b05d4f2308ffc, type: 3}
+  dataIngredient1: {fileID: 11400000, guid: db630466ca9a47742ad55228e78c2aa8, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: af658ecd4b3af0740a0d092f85610851, type: 2}
+  outcomePrefab: {fileID: 66549862226670833, guid: 61f125f1ba24d244b9d54cec84cb28be, type: 3}

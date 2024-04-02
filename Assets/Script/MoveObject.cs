@@ -103,7 +103,7 @@ public class MoveObject : MonoBehaviour {
         if (Input.GetMouseButtonDown(1)) {
             // Right mouse button clicked over the object
             // Add your action here
-            Debug.Log("Right-clicked on the object.");
+            Destroy(gameObject);
         }
     }
 }
