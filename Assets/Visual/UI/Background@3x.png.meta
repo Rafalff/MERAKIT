@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 879369e13e5eef944af024a2219bf347
+guid: 53638a96b979ab0408ea26be0943a2ab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,19 +37,19 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 2
-    wrapV: 2
-    wrapW: 2
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 530
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 30, y: 44, z: 34, w: 22}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -136,22 +136,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: squared-paper-texture 1_0
+      name: Background@3x_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2990
-        width: 567
-        height: 550
+        x: 12
+        y: 24
+        width: 1440
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 12, y: 12, z: 12, w: 12}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cdd530bef273a64ea3141d84b03531e
-      internalID: -1373550383
+      spriteID: 8ef74a166de9b9346aafbe0deaa164b2
+      internalID: -1301597426
       vertices: []
       indices: 
       edges: []
@@ -160,14 +160,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      squared-paper-texture 1_0: -1373550383
+      Background@3x_0: -1301597426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

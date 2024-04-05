@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
+  m_Name: Roller
+  m_EditorClassIdentifier: 
+  dataIngredient1: {fileID: 11400000, guid: bc006625ab6d48943b97e0b1406e13c0, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: bc006625ab6d48943b97e0b1406e13c0, type: 2}
+  outcomePrefab: {fileID: 8553421542876373000, guid: 88379548dee00734ba395d09c8a4de9a, type: 3}
