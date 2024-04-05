@@ -208,6 +208,7 @@ MonoBehaviour:
   minX: -8
   maxX: 5
   maxY: 3.5
+  DestroyVfx: {fileID: 6132369625906882430, guid: 86a65ddd2cb59c94cb389b2193a39bc9, type: 3}
 --- !u!50 &3913522104155950751
 Rigidbody2D:
   serializedVersion: 4

@@ -23,6 +23,8 @@ public class MoveObject : MonoBehaviour {
 
     private GameObject parent;
 
+    [SerializeField] private GameObject DestroyVfx;
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
         myCollider = rb.GetComponent<Collider2D>();
@@ -53,7 +55,9 @@ public class MoveObject : MonoBehaviour {
     private void OnMouseExit() {
         // Revert the color back to the original color when the mouse exits
         spriteRenderer.color = originalColor;
-        TooltipsManager.instance.HideTooltips();
+        if (!isDragging) {
+            TooltipsManager.instance.HideTooltips();
+        }
     }
 
     void OnMouseDown() {
@@ -104,6 +108,12 @@ public class MoveObject : MonoBehaviour {
             // Right mouse button clicked over the object
             // Add your action here
             Destroy(gameObject);
+            TooltipsManager.instance.HideTooltips();
         }
+    }
+
+
+    private void OnDestroy() {
+        Instantiate(DestroyVfx,transform.position, DestroyVfx.transform.rotation);
     }
 }

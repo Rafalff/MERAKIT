@@ -12,6 +12,9 @@ public class NewItemManager : MonoBehaviour {
     [SerializeField] private GameObject newItemCanvas;
     [SerializeField] private Image newItemIcon;
     [SerializeField] private TextMeshProUGUI newItemName;
+    [SerializeField] private int totalItem = 4;
+    [SerializeField] private TextMeshProUGUI itemFoundText;
+    [SerializeField] private int maxItem;
 
     // Method to get the singleton instance
     public static NewItemManager Instance {
@@ -28,14 +31,30 @@ public class NewItemManager : MonoBehaviour {
         }
     }
 
+    private void Start() {
+        itemFoundText.SetText("Barang ditemukan " + totalItem.ToString() + "/" + maxItem.ToString());
+    }
+
     // Method to award achievement for a new item
     public void AwardAchievementForNewItem(string itemID, Sprite icon) {
         if (!instantiatedItems.Contains(itemID)) {
             instantiatedItems.Add(itemID);
+            SetItemFoundText();
             Debug.Log("Achievement unlocked: New item created!");
             newItemCanvas.SetActive(true);
             newItemName.text = itemID;
             newItemIcon.sprite = icon;
+            newItemIcon.SetNativeSize();
+            Time.timeScale = 0f;
         }
+    }
+
+    void SetItemFoundText() {
+        totalItem++;
+        itemFoundText.SetText("Barang ditemukan " + totalItem.ToString() + "/" + maxItem.ToString());
+    }
+
+    public void ResumeTime() {
+        Time.timeScale = 1f;
     }
 }

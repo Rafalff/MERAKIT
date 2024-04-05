@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
-  m_Name: Roller
+  m_Name: Roda
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 11400000, guid: bc006625ab6d48943b97e0b1406e13c0, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
-  outcomePrefab: {fileID: 8553421542876373000, guid: 88379548dee00734ba395d09c8a4de9a, type: 3}
+  dataIngredient1: {fileID: 11400000, guid: fe288cca46164b3459937e64c27e046d, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: 2a200a08ebcf36d4a86dc956489102b9, type: 2}
+  outcomePrefab: {fileID: 6137854348238587478, guid: 1143f01ecf9afae43aa94780da675389, type: 3}
