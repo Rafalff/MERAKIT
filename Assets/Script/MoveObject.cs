@@ -107,6 +107,9 @@ public class MoveObject : MonoBehaviour {
         if (Input.GetMouseButtonDown(1)) {
             // Right mouse button clicked over the object
             // Add your action here
+            spriteRenderer.color = new Color(1f, 0f, 0f, 1f);
+        }
+        if (Input.GetMouseButtonUp(1)) {
             Destroy(gameObject);
             TooltipsManager.instance.HideTooltips();
         }

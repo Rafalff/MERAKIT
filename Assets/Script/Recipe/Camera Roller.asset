@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
-  m_Name: SirkuitDasar
+  m_Name: Camera Roller
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: 6fc1b0cf5d1f5634fb354c67215c0c89, type: 2}
-  outcomePrefab: {fileID: 585069600587968146, guid: 606537a27774f1a4b8de7026f2cc3b08, type: 3}
+  dataIngredient1: {fileID: 11400000, guid: 52b503b0665ab33408d8e053b1b656bc, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: fa3d6bf255a88f6449b917349aea731c, type: 2}
+  outcomePrefab: {fileID: 8830704604582821145, guid: 2f2445553856dcb4daef7733a6ae679b, type: 3}

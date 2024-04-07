@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
-  m_Name: SensorAir
+  m_Name: Sensor Dasar
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 11400000, guid: 49645a8d3749f6b44aa89480c41baae5, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: 575735307ee3418439fd01f4c5e8d64b, type: 2}
-  outcomePrefab: {fileID: 1166868542176838910, guid: af756e5e98d4ca34a8d5fa10db461a06, type: 3}
+  dataIngredient1: {fileID: 11400000, guid: dbd5b719634804a439c56eded3da178e, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
+  outcomePrefab: {fileID: 7592379541372287314, guid: f2465879419c93640a77e6472bb69324, type: 3}

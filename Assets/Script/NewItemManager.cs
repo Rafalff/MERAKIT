@@ -16,6 +16,8 @@ public class NewItemManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI itemFoundText;
     [SerializeField] private int maxItem;
 
+    [SerializeField] private GameObject[] instantiatedItemRecipe;
+
     // Method to get the singleton instance
     public static NewItemManager Instance {
         get {
@@ -57,4 +59,13 @@ public class NewItemManager : MonoBehaviour {
     public void ResumeTime() {
         Time.timeScale = 1f;
     }
+
+    public void CheckRecipe() {
+        foreach (GameObject recipeItem in instantiatedItemRecipe) {
+            if (instantiatedItems.Contains(recipeItem.name)) {
+                recipeItem.SetActive(true);
+            }
+        }
+    }
+
 }

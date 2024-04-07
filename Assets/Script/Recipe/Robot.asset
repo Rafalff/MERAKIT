@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
-  m_Name: SensorDasar
+  m_Name: Robot
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: 1f0b8bbff59bcb54cac90f60a75d9727, type: 2}
-  outcomePrefab: {fileID: 839387727378375341, guid: 87bc0bb829c3d4a43b3b3694925290fb, type: 3}
+  dataIngredient1: {fileID: 11400000, guid: fa3d6bf255a88f6449b917349aea731c, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
+  outcomePrefab: {fileID: 1679164426140155980, guid: 15f3335f678a27546bb1605a9e78cd4b, type: 3}

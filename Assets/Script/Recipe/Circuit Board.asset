@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 909051698595cf84f9e0cf6016f05449, type: 3}
-  m_Name: Roller
+  m_Name: Circuit Board
   m_EditorClassIdentifier: 
-  dataIngredient1: {fileID: 11400000, guid: bc006625ab6d48943b97e0b1406e13c0, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: bc006625ab6d48943b97e0b1406e13c0, type: 2}
-  outcomePrefab: {fileID: 8553421542876373000, guid: 88379548dee00734ba395d09c8a4de9a, type: 3}
+  dataIngredient1: {fileID: 11400000, guid: 2ebc0a09f976aec418ac779ea72f6570, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: af658ecd4b3af0740a0d092f85610851, type: 2}
+  outcomePrefab: {fileID: 3247987700045752987, guid: 6589671fd2bdaad4db9a26e3122f3411, type: 3}
