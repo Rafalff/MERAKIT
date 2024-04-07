@@ -15,3 +15,5 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: fe288cca46164b3459937e64c27e046d, type: 2}
   dataIngredient2: {fileID: 11400000, guid: 2a200a08ebcf36d4a86dc956489102b9, type: 2}
   outcomePrefab: {fileID: 6137854348238587478, guid: 1143f01ecf9afae43aa94780da675389, type: 3}
+  desc: Komponen melingkar yang berputar di sekitar sumbu, digunakan dalam kendaraan
+    dan mesin untuk memberikan gerakan atau dukungan.

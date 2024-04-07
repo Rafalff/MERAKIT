@@ -15,3 +15,5 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: 2ebc0a09f976aec418ac779ea72f6570, type: 2}
   dataIngredient2: {fileID: 11400000, guid: 1f0b8bbff59bcb54cac90f60a75d9727, type: 2}
   outcomePrefab: {fileID: 839387727378375341, guid: 87bc0bb829c3d4a43b3b3694925290fb, type: 3}
+  desc: Perangkat yang digunakan untuk menerima sinyal nirkabel, seperti sinyal radio,
+    dan mengubahnya menjadi bentuk yang dapat diproses oleh perangkat elektronik.

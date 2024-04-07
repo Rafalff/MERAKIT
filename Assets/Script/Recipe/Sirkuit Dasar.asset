@@ -15,3 +15,6 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
   dataIngredient2: {fileID: 11400000, guid: 6fc1b0cf5d1f5634fb354c67215c0c89, type: 2}
   outcomePrefab: {fileID: 585069600587968146, guid: 606537a27774f1a4b8de7026f2cc3b08, type: 3}
+  desc: Rangkaian elektronik yang sederhana yang terdiri dari komponen dasar seperti
+    resistor, kapasitor, dan transistor yang mengatur aliran listrik dalam perangkat
+    elektronik.

@@ -15,3 +15,5 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: db630466ca9a47742ad55228e78c2aa8, type: 2}
   dataIngredient2: {fileID: 11400000, guid: af658ecd4b3af0740a0d092f85610851, type: 2}
   outcomePrefab: {fileID: 66549862226670833, guid: 61f125f1ba24d244b9d54cec84cb28be, type: 3}
+  desc: Perangkat audio yang mengubah sinyal listrik menjadi suara, digunakan dalam
+    sistem audio dan perangkat elektronik lainnya untuk output suara

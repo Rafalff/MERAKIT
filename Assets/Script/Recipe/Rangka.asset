@@ -15,3 +15,4 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: 4e1f4cf3265ba1b4eb6a34d6999c1766, type: 2}
   dataIngredient2: {fileID: 11400000, guid: 4e1f4cf3265ba1b4eb6a34d6999c1766, type: 2}
   outcomePrefab: {fileID: 7937244274093753731, guid: 509aa8d02407a24408064202264df5c0, type: 3}
+  desc: Bagian badan dari ban

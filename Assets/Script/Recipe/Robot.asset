@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Robot
   m_EditorClassIdentifier: 
   dataIngredient1: {fileID: 11400000, guid: fa3d6bf255a88f6449b917349aea731c, type: 2}
-  dataIngredient2: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
+  dataIngredient2: {fileID: 11400000, guid: dbd5b719634804a439c56eded3da178e, type: 2}
   outcomePrefab: {fileID: 1679164426140155980, guid: 15f3335f678a27546bb1605a9e78cd4b, type: 3}
+  desc: Perangkat otomatis yang diprogram untuk melakukan tugas tertentu, menggunakan
+    sensor dan aktuator untuk interaksi dengan lingkungan.
