@@ -21,6 +21,7 @@ public class OnHoverScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData) {
         TooltipsManager.instance.ShowRecipe(recipe1, recipe2, itemName, recipe1Name, recipe2Name, desc);
+        AudioManager.instance.PlaySfx("hover");
     }
 
     public void OnPointerExit(PointerEventData eventData) {

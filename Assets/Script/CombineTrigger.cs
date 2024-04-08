@@ -17,6 +17,7 @@ public class CombineTrigger : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision) {
         if (combineSystem.lastInteractedGameObject == this.gameObject) {
             Instantiate(ColisionEffect, collision.gameObject.transform.position, Quaternion.identity);
+            AudioManager.instance.PlaySfx("trigger");
         }
     }
 
@@ -35,7 +36,6 @@ public class CombineTrigger : MonoBehaviour {
                 ItemPickup itemPickup = instantiatedPrefab.GetComponent<ItemPickup>() ?? instantiatedPrefab.GetComponentInChildren<ItemPickup>();
 
                 NewItemManager.Instance.AwardAchievementForNewItem(itemPickup.itemData.ingredientName,itemPickup.itemData.icon);
-
 
                 if (instantiatedPrefab.GetComponent<Rigidbody2D>() == null) {
                     Debug.Log("Rigidbody2D component not found on the instantiated prefab.");

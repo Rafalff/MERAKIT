@@ -52,9 +52,20 @@ public class NewItemManager : MonoBehaviour {
             newItemName.text = itemID;
             newItemIcon.sprite = icon;
             newItemIcon.SetNativeSize();
+            UpdateSliderValue();
+
+            if(itemID == "Sensor Banjir") {
+                MissionManager.instance.CheckMission1Finish();
+            }
+            if (totalItem >= maxItem) {
+                MissionManager.instance.CheckMission2Finish();
+            }
+            AudioManager.instance.PlaySfx("newitem");
             Time.timeScale = 0f;
 
-            UpdateSliderValue();
+
+        } else {
+            AudioManager.instance.PlaySfx("combine");
         }
     }
 
