@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class NewItemManager : MonoBehaviour {
     // Singleton instance
     private static NewItemManager instance;
