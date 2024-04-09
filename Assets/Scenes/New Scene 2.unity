@@ -3255,7 +3255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &341402933
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7343,14 +7343,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rectTransformText: {fileID: 830281635}
   newsText:
-  - 'Tips : object sama + object sama (?)'
+  - 'Tips: object sama + object sama (?)'
   - Ini cuma teks lorem ipsum yang diganti variasinya
   - 'Fun fact: game development bisa mengakibatkan pening kepala'
   - Klik kanan pada object untuk menghapus
-  - Pertumbuhan eSports menghasilkan lebih dari $1 miliar pendapatan pada tahun 2020.
+  - Baterai + Circuit Board (?)
+  - Kreativitas dalam mengombinasikan item membuka pintu menuju item baru yang luar
+    biasa.
+  - Tidak realistis? maapin :(
   - Lebih dari 500 jam video diunggah ke YouTube setiap menit.
-  - Pada tahun 2020, jumlah perangkat seluler melebihi jumlah populasi dunia.
-  - Penjualan robot domestik meningkat 34% pada tahun 2020.
+  - 'Fakta random: game ini dibuat ketika sudah mepet deadline :('
   newsTextTMP: {fileID: 830281636}
 --- !u!1 &705269150
 GameObject:
@@ -9110,7 +9112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &844284479
 RectTransform:
   m_ObjectHideFlags: 0
