@@ -3092,7 +3092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &341402933
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5879,6 +5879,8 @@ MonoBehaviour:
   recipeText1: {fileID: 1171161387}
   recipeText2: {fileID: 1248450409}
   description: {fileID: 645815696}
+  right: {fileID: 0}
+  rightTooltipsText: {fileID: 0}
 --- !u!1 &556964066
 GameObject:
   m_ObjectHideFlags: 0
@@ -8583,7 +8585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &844284479
 RectTransform:
   m_ObjectHideFlags: 0

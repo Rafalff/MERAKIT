@@ -123,4 +123,10 @@ public class MoveObject : MonoBehaviour {
     public void DestroyVfxCalled() {
         Instantiate(DestroyVfx,transform.position, DestroyVfx.transform.rotation);
     }
+
+    private void OnDestroy() {
+        if (parent != null) {
+            Destroy(parent.gameObject);
+        }
+    }
 }

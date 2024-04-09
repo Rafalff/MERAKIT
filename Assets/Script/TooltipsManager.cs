@@ -20,11 +20,15 @@ public class TooltipsManager : MonoBehaviour
 
     public TextMeshProUGUI description;
 
+    public GameObject right;
+    public TextMeshProUGUI rightTooltipsText;
+
     void Start()
     {
         instance = this;
         gameObject.SetActive(false);
         recipePanel.SetActive(false);
+        right.SetActive(false);
     }
 
     public void ShowTooltips(string tooltips) {
@@ -61,5 +65,15 @@ public class TooltipsManager : MonoBehaviour
         recipeText2.text = string.Empty;
 
         description.text = string.Empty;
+    }
+
+    public void ShowRightTooltips(string tooltips) {
+        right.SetActive(true);
+        rightTooltipsText.text = tooltips;
+    }
+
+    public void HideRightTooltips() {
+        right.SetActive(false);
+        rightTooltipsText.text = string.Empty;
     }
 }
