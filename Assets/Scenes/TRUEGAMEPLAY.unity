@@ -7350,7 +7350,6 @@ MonoBehaviour:
   - Baterai + Circuit Board (?)
   - Kreativitas dalam mengombinasikan item membuka pintu menuju item baru yang luar
     biasa.
-  - Tidak realistis? maapin :(
   - Lebih dari 500 jam video diunggah ke YouTube setiap menit.
   - 'Fakta random: game ini dibuat ketika sudah mepet deadline :('
   newsTextTMP: {fileID: 830281636}
@@ -7539,6 +7538,7 @@ MonoBehaviour:
   - {fileID: 2029595598}
   - {fileID: 853106536}
   - {fileID: 900894500}
+  - {fileID: 657204026}
   sliderFinish: {fileID: 432709725}
 --- !u!4 &707040079
 Transform:
@@ -8415,8 +8415,8 @@ Transform:
   m_GameObject: {fileID: 771572730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8907, y: -4.6566, z: 0}
-  m_LocalScale: {x: 21.588718, y: 3.3153763, z: 1}
+  m_LocalPosition: {x: 0.8907, y: -9.4804, z: 0}
+  m_LocalScale: {x: 21.588718, y: 12.96279, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -12972,6 +12972,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171161385}
   m_CullTransparentMesh: 1
+--- !u!1001 &1189727087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2343819560401077375, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_Name
+      value: Battery
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8595524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45171857
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361326774971670623, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f2f6e4fba2a35414c94421836f82fccd, type: 3}
 --- !u!1 &1210406837
 GameObject:
   m_ObjectHideFlags: 0
@@ -18957,6 +19014,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960661221}
   m_CullTransparentMesh: 1
+--- !u!1001 &1964000255
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4152428391301606202, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_Name
+      value: Kabel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.585003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3239349
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997916011272131867, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3526fbaedea2692459dc4f668372c132, type: 3}
 --- !u!1 &1966327990
 GameObject:
   m_ObjectHideFlags: 0
@@ -20222,3 +20336,5 @@ SceneRoots:
   - {fileID: 1010455850}
   - {fileID: 1019973055}
   - {fileID: 771572733}
+  - {fileID: 1189727087}
+  - {fileID: 1964000255}
