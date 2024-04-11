@@ -15,3 +15,5 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: dbd5b719634804a439c56eded3da178e, type: 2}
   dataIngredient2: {fileID: 11400000, guid: ab75ab07fffae2547b203e2928de28fd, type: 2}
   outcomePrefab: {fileID: 7592379541372287314, guid: f2465879419c93640a77e6472bb69324, type: 3}
+  desc: Komponen elektronik yang mendeteksi perubahan dalam lingkungan fisik atau
+    kondisi sistem dan menghasilkan sinyal output berdasarkan pengukuran tersebut.

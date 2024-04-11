@@ -71,6 +71,7 @@ public class MoveObject : MonoBehaviour {
         }
 
         transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
+        AudioManager.instance.PlaySfx("hover2");
     }
 
     void OnMouseDrag() {
@@ -110,13 +111,22 @@ public class MoveObject : MonoBehaviour {
             spriteRenderer.color = new Color(1f, 0f, 0f, 1f);
         }
         if (Input.GetMouseButtonUp(1)) {
+            DestroyVfxCalled();
             Destroy(gameObject);
             TooltipsManager.instance.HideTooltips();
+            AudioManager.instance.PlaySfx("destroy");
+
         }
     }
 
 
-    private void OnDestroy() {
+    public void DestroyVfxCalled() {
         Instantiate(DestroyVfx,transform.position, DestroyVfx.transform.rotation);
+    }
+
+    private void OnDestroy() {
+        if (parent != null) {
+            Destroy(parent.gameObject);
+        }
     }
 }

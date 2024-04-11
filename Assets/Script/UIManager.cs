@@ -10,6 +10,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject targetPanel;
 
+
+    private void Awake() {
+        Instance = this;
+    }
     public void OnClickComponent() {
         settingsPanel.SetActive(false);
         componentPanel.SetActive(true);

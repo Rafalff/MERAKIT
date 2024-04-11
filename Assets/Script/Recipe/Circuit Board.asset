@@ -15,3 +15,5 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: 2ebc0a09f976aec418ac779ea72f6570, type: 2}
   dataIngredient2: {fileID: 11400000, guid: af658ecd4b3af0740a0d092f85610851, type: 2}
   outcomePrefab: {fileID: 3247987700045752987, guid: 6589671fd2bdaad4db9a26e3122f3411, type: 3}
+  desc: Platform yang digunakan untuk merakit dan menghubungkan komponen elektronik,
+    seperti resistor, kapasitor, dan transistor.

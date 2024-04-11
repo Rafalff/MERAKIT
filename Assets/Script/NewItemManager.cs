@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class NewItemManager : MonoBehaviour {
     // Singleton instance
     private static NewItemManager instance;
@@ -13,10 +14,14 @@ public class NewItemManager : MonoBehaviour {
     [SerializeField] private Image newItemIcon;
     [SerializeField] private TextMeshProUGUI newItemName;
     [SerializeField] private int totalItem = 4;
+    [SerializeField] private float totalItemSlider = 0f;
+
     [SerializeField] private TextMeshProUGUI itemFoundText;
     [SerializeField] private int maxItem;
 
     [SerializeField] private GameObject[] instantiatedItemRecipe;
+
+    [SerializeField] private Slider sliderFinish;
 
     // Method to get the singleton instance
     public static NewItemManager Instance {
@@ -35,6 +40,7 @@ public class NewItemManager : MonoBehaviour {
 
     private void Start() {
         itemFoundText.SetText("Barang ditemukan " + totalItem.ToString() + "/" + maxItem.ToString());
+        UpdateSliderValue();
     }
 
     // Method to award achievement for a new item
@@ -47,11 +53,25 @@ public class NewItemManager : MonoBehaviour {
             newItemName.text = itemID;
             newItemIcon.sprite = icon;
             newItemIcon.SetNativeSize();
+            UpdateSliderValue();
+
+            if(itemID == "Sensor Banjir") {
+                MissionManager.instance.CheckMission1Finish();
+            }
+            if (totalItem >= maxItem) {
+                MissionManager.instance.CheckMission2Finish();
+            }
+            AudioManager.instance.PlaySfx("newitem");
             Time.timeScale = 0f;
+
+
+        } else {
+            AudioManager.instance.PlaySfx("combine");
         }
     }
 
     void SetItemFoundText() {
+        totalItemSlider++;
         totalItem++;
         itemFoundText.SetText("Barang ditemukan " + totalItem.ToString() + "/" + maxItem.ToString());
     }
@@ -65,6 +85,13 @@ public class NewItemManager : MonoBehaviour {
             if (instantiatedItems.Contains(recipeItem.name)) {
                 recipeItem.SetActive(true);
             }
+        }
+    }
+
+    public void UpdateSliderValue() {
+        
+        if (sliderFinish != null) {
+            sliderFinish.value = totalItemSlider / maxItem;
         }
     }
 

@@ -8,7 +8,7 @@ public class OnHoverScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private string itemName;
     private string recipe1Name;
     private string recipe2Name;
-
+    private string desc;
     private void Start() {
         recipeHolder = GetComponent<RecipeHolder>();
         recipe1 = recipeHolder.recipe.dataIngredient1.icon;
@@ -16,10 +16,12 @@ public class OnHoverScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         itemName = recipeHolder.recipe.name;
         recipe1Name = recipeHolder.recipe.dataIngredient1.ingredientName;
         recipe2Name = recipeHolder.recipe.dataIngredient2.ingredientName;
+        desc = recipeHolder.recipe.desc;
     }
 
     public void OnPointerEnter(PointerEventData eventData) {
-        TooltipsManager.instance.ShowRecipe(recipe1, recipe2, itemName, recipe1Name, recipe2Name);
+        TooltipsManager.instance.ShowRecipe(recipe1, recipe2, itemName, recipe1Name, recipe2Name, desc);
+        AudioManager.instance.PlaySfx("hover");
     }
 
     public void OnPointerExit(PointerEventData eventData) {

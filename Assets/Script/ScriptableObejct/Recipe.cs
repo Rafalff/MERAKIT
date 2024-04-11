@@ -5,4 +5,5 @@ public class Recipe : ScriptableObject {
     public ItemData dataIngredient1;
     public ItemData dataIngredient2;
     public GameObject outcomePrefab;
+    public string desc;
 }

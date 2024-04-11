@@ -15,3 +15,4 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: 52b503b0665ab33408d8e053b1b656bc, type: 2}
   dataIngredient2: {fileID: 11400000, guid: fa3d6bf255a88f6449b917349aea731c, type: 2}
   outcomePrefab: {fileID: 8830704604582821145, guid: 2f2445553856dcb4daef7733a6ae679b, type: 3}
+  desc: Kamera berjalan (?)

@@ -17,11 +17,18 @@ public class TooltipsManager : MonoBehaviour
 
     public TextMeshProUGUI recipeText1;
     public TextMeshProUGUI recipeText2;
+
+    public TextMeshProUGUI description;
+
+    public GameObject right;
+    public TextMeshProUGUI rightTooltipsText;
+
     void Start()
     {
         instance = this;
         gameObject.SetActive(false);
         recipePanel.SetActive(false);
+        right.SetActive(false);
     }
 
     public void ShowTooltips(string tooltips) {
@@ -34,7 +41,7 @@ public class TooltipsManager : MonoBehaviour
         tooltipsText.text = string.Empty;
     }
 
-    public void ShowRecipe(Sprite icon1, Sprite icon2,string itemname, string recipetext1, string recipetext2) {
+    public void ShowRecipe(Sprite icon1, Sprite icon2,string itemname, string recipetext1, string recipetext2, string desc) {
         recipePanel.SetActive(true);
         img1.sprite = icon1;
         img2.sprite = icon2;
@@ -43,6 +50,9 @@ public class TooltipsManager : MonoBehaviour
 
         recipeText1.SetText(recipetext1);
         recipeText2.SetText(recipetext2);
+
+        description.SetText(desc);
+
     }
 
     public void HideRecipe() {
@@ -53,5 +63,17 @@ public class TooltipsManager : MonoBehaviour
         itemName.text = string.Empty;
         recipeText1.text = string.Empty;
         recipeText2.text = string.Empty;
+
+        description.text = string.Empty;
+    }
+
+    public void ShowRightTooltips(string tooltips) {
+        right.SetActive(true);
+        rightTooltipsText.text = tooltips;
+    }
+
+    public void HideRightTooltips() {
+        right.SetActive(false);
+        rightTooltipsText.text = string.Empty;
     }
 }

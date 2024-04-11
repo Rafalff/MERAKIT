@@ -15,3 +15,5 @@ MonoBehaviour:
   dataIngredient1: {fileID: 11400000, guid: 49645a8d3749f6b44aa89480c41baae5, type: 2}
   dataIngredient2: {fileID: 11400000, guid: 575735307ee3418439fd01f4c5e8d64b, type: 2}
   outcomePrefab: {fileID: 1166868542176838910, guid: af756e5e98d4ca34a8d5fa10db461a06, type: 3}
+  desc: Mendeteksi keberadaan air dalam wadah atau lingkungan tertentu, umumnya digunakan
+    dalam aplikasi akuarium atau irigasi.
